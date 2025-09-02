@@ -1,12 +1,11 @@
 import { Button } from '@/components/ui/button';
-import { GlitterText } from './glitter-text';
 import { Rocket, ShieldCheck } from 'lucide-react';
 
 export function Hero() {
   return (
     <div className="relative px-6 py-10 rounded-2xl h-full flex flex-col justify-center items-start text-white">
       <h1 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-200 via-pink-300 to-white drop-shadow-lg font-headline">
-        <GlitterText text="Build Vs Break" />
+        <span className="relative inline-block glitter">Build Vs Break</span>
         <span className="text-xl block font-medium text-slate-200 font-body tracking-wide">
           AIML Club Event
         </span>
