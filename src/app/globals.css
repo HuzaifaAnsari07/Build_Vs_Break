@@ -91,21 +91,6 @@ body {
   .animate-blob {
     animation: blob 7s infinite;
   }
-  .glitter::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -75%;
-    width: 50%;
-    height: 100%;
-    background: linear-gradient(
-      120deg,
-      rgba(255, 255, 255, 0.6),
-      rgba(255, 255, 255, 0)
-    );
-    transform: skewX(-25deg);
-    animation: shimmer 3s infinite;
-  }
 }
 
 @keyframes blob {
@@ -120,11 +105,5 @@ body {
   }
   100% {
     transform: translate(0px, 0px) scale(1);
-  }
-}
-
-@keyframes shimmer {
-  100% {
-    left: 125%;
   }
 }

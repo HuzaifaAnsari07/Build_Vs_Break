@@ -5,7 +5,7 @@ export function Hero() {
   return (
     <div className="relative px-6 py-10 rounded-2xl h-full flex flex-col justify-center items-start text-white">
       <h1 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-200 via-pink-300 to-white drop-shadow-lg font-headline">
-        <span className="relative inline-block glitter">Build Vs Break</span>
+        Build Vs Break
       </h1>
       <p className="text-xl block font-medium text-slate-200 font-body tracking-wide mt-2">
         AIML Club Event
