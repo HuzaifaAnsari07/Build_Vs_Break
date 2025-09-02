@@ -1,12 +1,22 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { cn } from '@/lib/utils';
 import { LoginForm } from './login-form';
 import { RegisterForm } from './register-form';
 
 export function AuthCard() {
   const [isRegistering, setIsRegistering] = useState(false);
+  const [isFlipping, setIsFlipping] = useState(true);
+
+  useEffect(() => {
+    // Initial shuffle animation
+    const flipTimeout = setTimeout(() => {
+      setIsFlipping(false);
+    }, 1200);
+
+    return () => clearTimeout(flipTimeout);
+  }, []);
 
   const handleSwitch = () => setIsRegistering(!isRegistering);
 
@@ -15,7 +25,8 @@ export function AuthCard() {
       <div
         className={cn(
           'relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d]',
-          isRegistering && '[transform:rotateY(180deg)]'
+          isRegistering && !isFlipping && '[transform:rotateY(180deg)]',
+          isFlipping && 'animate-shuffle'
         )}
       >
         <div className="absolute w-full h-full [backface-visibility:hidden] transform-gpu">

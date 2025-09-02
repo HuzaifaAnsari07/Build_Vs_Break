@@ -88,10 +88,17 @@ export default {
             height: '0',
           },
         },
+        shuffle: {
+          '0%, 100%': { transform: 'rotateY(0deg)' },
+          '25%': { transform: 'rotateY(180deg) translateX(50px) rotate(-5deg)' },
+          '50%': { transform: 'rotateY(0deg) translateX(-50px) rotate(5deg)' },
+          '75%': { transform: 'rotateY(-180deg) translateX(0) rotate(0deg)' },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
+        shuffle: 'shuffle 1.2s ease-in-out',
       },
     },
   },

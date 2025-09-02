@@ -6,9 +6,9 @@ export function Hero() {
   return (
     <div className="relative px-6 py-10 rounded-2xl h-full flex flex-col justify-center items-start text-white">
       <h1 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-200 via-pink-300 to-white drop-shadow-lg font-headline">
-        <GlitterText text="AIML Club" />
+        <GlitterText text="Build Vs Break" />
         <span className="text-xl block font-medium text-slate-200 font-body tracking-wide">
-          Build Vs Break Event
+          AIML Club Event
         </span>
       </h1>
 
@@ -35,7 +35,11 @@ export function Hero() {
         >
           Explore Event
         </Button>
-        <Button size="lg" variant="outline" className="text-white/90 bg-white/5 border-white/20 hover:bg-white/10 hover:text-white">
+        <Button
+          size="lg"
+          variant="outline"
+          className="text-white/90 bg-white/5 border-white/20 hover:bg-white/10 hover:text-white"
+        >
           Read Rules
         </Button>
       </div>
